@@ -30,7 +30,7 @@
 
 #title-logo {
     position: relative;
-    height: 10rem;
+    height: 5.5rem;
     text-align: center;
     z-index: 10;
     top: 40%;
@@ -38,7 +38,7 @@
 }
 
 #title-logo-second {
-    height: 10rem;
+    height: 7rem;
     text-align: center;
     pointer-events: none;
 }
@@ -52,16 +52,41 @@ img {
 }
 
 a {
-    color: black  !important;
+    color: #313131 !important;
     font-size: 1.5rem;
 }
 
-a:hover {
-    color: blue !important;
-}
 
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+.nav-item-links {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 1.09244rem;
+    line-height: 1;
+    line-height: 13px;
+    padding: 3px 1.0084rem;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    font-size: 1rem;
+}
+
+a:hover, div.dropdown:hover {
+    color: #6e6c6c !important;
+    text-decoration: underline !important;
+}
+
+.main-photo {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
