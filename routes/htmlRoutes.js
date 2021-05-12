@@ -13,6 +13,6 @@ module.exports = function(app) {
   });
 
   app.get("/blogs", function(req, res) {
-    res.render("blogs_writing");
+    res.render("blogs_writings");
   });
 };
