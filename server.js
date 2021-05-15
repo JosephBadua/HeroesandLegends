@@ -6,7 +6,8 @@ var connection = mysql.createConnection({
   host     : 'localhost',
   port     :  3306 ,
   user     : 'root',
-  password : 'Nightlyassassinx123!@#'
+  password : 'Nightlyassassinx123!@#',
+  database : 'HeroesAndLegends'
 });
  
 connection.connect(function(err) {
@@ -17,6 +18,13 @@ connection.connect(function(err) {
  
   console.log('connected as id ' + connection.threadId);
 });
+
+connection.query('SELECT * FROM announcements', function (error, results, fields) {
+    if (error) throw error;
+    console.log(results);
+  });
+
+
 var app = express();
 var PORT = process.env.PORT || 3000
 
