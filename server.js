@@ -1,10 +1,10 @@
 var express = require("express");
 var exphbs = require("express-handlebars");
-
 var mysql      = require('mysql');
+
 var connection = mysql.createConnection({
   host     : 'localhost',
-  port     :  3001 ,
+  port     :  3306 ,
   user     : 'root',
   password : 'Nightlyassassinx123!@#'
 });
@@ -17,7 +17,6 @@ connection.connect(function(err) {
  
   console.log('connected as id ' + connection.threadId);
 });
-
 var app = express();
 var PORT = process.env.PORT || 3000
 
