@@ -4,3 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log('click');
     });
 });
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+});

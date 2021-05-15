@@ -20,4 +20,9 @@ module.exports = function(app) {
     res.render("login_form");
   });
 
+  app.get("/hwarang", function(req, res) {
+    res.render("hwarang_foundation");
+  });
+
+
 };

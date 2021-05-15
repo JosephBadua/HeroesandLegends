@@ -1,3 +1,4 @@
+
 <div class="container-fluid" style="padding: 0px !important;">
   <div class="row">
     <div class="col-md-12">
@@ -5,33 +6,33 @@
        <a href="#"><img id="title-logo-second" class="center" src="images/hwarang_background.png" alt="Logo"></a>
       <br/>
     </div>
-    <hr class="center" style="width: 90%;">
   </div>
+
+  <hr class="center" style="width: 90%;">
   
   <div class="row">
     <div class="col-md-7">
       <ul class="nav justify-content-center">
         <li>
-          <div class="dropdown">
-              <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Home
-              </button>
+          <div class="btn-group">
+            <a href="/" class="btn" type="button" aria-haspopup="true" aria-expanded="false">Home</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="btn-group">
+            <a href="announcements" class="btn" type="button" aria-haspopup="true" aria-expanded="false"> Announcements</a>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only"></span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Blogs &amp; Writings</a>
+              <a class="dropdown-item" href="#">Events</a>
+            </div>
           </div>
         </li>
         <li class="nav-item">
           <div class="dropdown">
-          <a href="announcements" class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Announcements
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="announcements">Blogs &amp; Writings</a>
-            <a class="dropdown-item" href="#">Events</a>
-          </div>
-      </div>
-        </li>
-        <li class="nav-item">
-          <div class="dropdown">
-            <a class="btn" href="" >Hwarang Foundation</a>
+            <a class="btn" href="hwarang_foundation" >Hwarang Foundation</a>
           </div>
         </li>
         <li>
@@ -40,28 +41,31 @@
           </div>
         </li>
         <li class="nav-item">
-          <div class="dropdown">
-          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Nominations
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Science, Technology, Engineering, and Mathematics (STEM)</a>
-            <a class="dropdown-item" href="#">Medicine</a>
-            <a class="dropdown-item" href="#">Enviornmental Service</a>
-            <a class="dropdown-item" href="#">Huminatarian Servie &amp; Education</a>
-            <a class="dropdown-item" href="#">International Relation</a>
-          </div>
-      </div>
+            <div class="btn-group">
+              <a href="#" class="btn" type="button" aria-haspopup="true" aria-expanded="false">Nominations</a>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only"></span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Science, Technology, Engineering, and Mathematics (STEM)</a>
+                <a class="dropdown-item" href="#">Medicine</a>
+                <a class="dropdown-item" href="#">Enviornmental Service</a>
+                <a class="dropdown-item" href="#">Huminatarian Servie &amp; Education</a>
+                <a class="dropdown-item" href="#">International Relation</a>
+              </div>
+            </div>
         </li>
-        <li>
-          <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Photos	&amp; Videos
-            </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Press &amp; Media</a>
-          </div>
-      </div>
+        <li class="nav-item">
+
+          <div class="btn-group">
+              <a href="#" class="btn" type="button" aria-haspopup="true" aria-expanded="false">Photos	&amp; Videos</a>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only"></span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Press &amp; Media</a>
+              </div>
+            </div>
         </li>
       </ul>
     </div>
@@ -80,7 +84,7 @@
           </li>
           <li class="nav-item">
             <div class="dropdown">
-              <a class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Member Login</a>
+             <a class="btn" href="login">Member Login</a>
             </div>
           </li>
           <li class="nav-item">
@@ -93,25 +97,88 @@
   </div>
   <hr class="center" style="width: 90%;">
   
+
   <br/>
   <br/>
+
+  </div>
 
   {{!-- accouncements/blog/writing --}}
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6">
-       <img style="max-width:100%; max-height:100%;" src="/images/media_v7Ks0oNHI1.png">
+      <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h1 style="text-align: center;">Announcements</h1>
+        </div>
     </div>
-      <div class="col-md-6">
-        <p>등학교에 다니는 한인 2세들에게 온라인에서 한국어를 가르치는 한국내 외국인학교 학생들이 있다.
-        LA에 본부를 둔 화랑청소년재단(총재 박윤숙) 한국 지부인 ‘세나 화랑’ 소속 학생 16명은 지난달 14일부터 캘리포니아 지역에 있는 한인 초등학생 3명씩을 맡아 첫 수업을 진행했다. 9일 현재 2회차 수업을 마쳤고, 10주 동안 이어갈 계획이다.
-        ‘새로운’이라는 뜻의 ‘세나’는 2016년 한국외국인학교(KIS) 판교 캠퍼스에 설립됐다. 현재 33명의 화랑 단원이 활동하고 있다. 그동안 국내 교육원과 교회, 장애인 복지관 등을 돌며 아이들에게 영어를 가르치는 봉사를 했고, 이번에 온라인 플랫폼(SOS)에서 재미동포 초등생들을 위한 한국어 교육 봉사를 시작했다.
-        봉사는 ‘화랑 실리콘 밸리’와 협력해 이뤄진다. 세나가 계획을 세워 수업을 진행하고, 실리콘밸리는 학생 관리와 모집을 담당한다.
-        모집 예상 인원은 24명이었지만, 관심과 성원에 힘입어 하루 만에 무려 50명의 학생이 참가 신청서를 제출했다고 한다.
-        11학년에 재학하는 최윤혁 세나 회장은 연합뉴스와 인터뷰에서 “코로나19로 봉사가 중단됐고, 딱히 봉사할 곳도 없었는데 단원들이 고민 끝에 한국어를 가르치는 일에 착안했다”고 말했다.</p>
+    <div class="col-md-2"></div>
+      <br/>
+      <br/>
+    {{!-- This is a loop of announcement (ONLY IF FIRST) --}}
+    <hr class="center-fit" style="width: 85%;"> 
+    <br/>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+       <img style="max-width:100%; max-height:100%;" src="https://static01.nyt.com/images/2021/05/14/climate/14CLI-GRID-print1/12CLI-GRID1-superJumbo.jpg?quality=90&auto=webp">
+    </div>
+      <div class="col-md-5">
+        <h1 style="text-align: center;">Pipeline Hack Points to Growing Cybersecurity Risk for Energy System</h1>
+          <br/>
+        <p style="font-size: 20px;">WASHINGTON — The audacious ransomware attack that shut down a major fuel pipeline and sent Americans scrambling for gasoline in the Southeast this week was not the first time hackers have disrupted America’s aging, vulnerable energy infrastructure. And it’s unlikely to be the last.</p>
+        <p style="font-size: 20px;">Across the globe, cyberattackers are increasingly taking aim at the energy systems that underpin modern society. A February report from IBM found that the energy industry was the third most targeted sector for such attacks in 2020, behind only finance and manufacturing. That was up from ninth place in 2019.</p>
+        <p style="font-size: 20px;">“This should be a wake-up call,” said Jonathon Monken, a principal at the energy consulting firm Converge Strategies. “When you look at what’s most likely to cause disruptions to energy companies today, I think you have to put cybersecurity risks at the top.”
       </div>
+      <div class="col-md-1"></div>
     </div>
+    <br/>
+    <hr class="center-fit" style="width: 85%;"> 
+    {{!-- This is a loop of announcement --}}
+
+    {{!-- This is a loop of announcement --}}
+    <br/>
+    <div class="row">
+      <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <h1 style="text-align: center;">Israeli strike destroys Gaza tower housing media organisations</h1>
+              <br/>
+            <p style="font-size: 20px;">The Israeli air force has destroyed a tower block in Gaza City housing the offices of the Associated Press and Al Jazeera in what has widely been decried as an attack on press freedom.</p>
+            <p style="font-size: 20px;">The airstrikes on Saturday – the sixth consecutive day of hostilities between Israel and Hamas – came roughly an hour after the Israeli military ordered people to evacuate al Jalaa tower.</p>
+            <p style="font-size: 20px;">There was no immediate explanation beforehand for why the 15-storey building was targeted. As well as the two international media organisations, the high-rise was home to several other media outlets, offices including several internet providers, and private apartments.</p>
+        </div>
+      <div class="col-md-5">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TtJs4Z-jWso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <br/>
+      <hr class="center-fit" style="width: 85%;"> 
+    <br/>
+    {{!-- This is a look of announcement --}}
+
+     {{!-- This is a look of announcement --}}
+    <br/>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+       <img style="max-width:100%; max-height:100%;" src="https://i.guim.co.uk/img/media/e3091f07302d57e15fbc92f4fe17f4bfd552938f/0_0_4657_2882/master/4657.jpg?width=940&quality=85&auto=format&fit=max&s=290d9a8478271131bb1e3a06e11e8480">
+    </div>
+      <div class="col-md-5">
+        <h1 style="text-align: center;">‘I saw death coming’: Romain Grosjean pushes on in IndyCar after F1 wreck</h1>
+          <br/>
+        <p style="font-size: 20px;">For some racing drivers hand blisters are an occasional nuisance. For Romain Grosjean they have become a constant menace, ever poised to loosen his grip and send his bold move from Formula 1 to IndyCar spiraling off course. Heading into IndyCar’s season-opening test in February, the 35-year-old Franco-Swiss wasn’t confident his tender mitts could hold his No 51 Honda-powered Dale Coyne Racing machine on the 2.3-mile, 17-turn circuit at Birmingham, Alabama’s Barber Motorsports Park for long without making blood bags out of his racing gloves. So Grosjean, who races under the French flag, consulted with two close compatriots he thought might have some handy advice.</p>  
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <br/>
+    <hr class="center-fit" style="width: 85%;"> 
+    <br/>
+
+
+     {{!-- This is a look of announcement --}}
+
+
   </div>
 
 </div>
