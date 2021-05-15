@@ -15,4 +15,9 @@ module.exports = function(app) {
   app.get("/blogs", function(req, res) {
     res.render("blogs_writings");
   });
+
+  app.get("/login", function(req, res) {
+    res.render("login_form");
+  });
+
 };
