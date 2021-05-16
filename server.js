@@ -38,7 +38,7 @@ app.set("view engine", "handlebars");
 require("./routes/htmlRoutes.js")(app);
 
 // Access the parse results as request.body
-app.post('/details', function(request, response){
+app.post('/nomination_category', function(request, response){
     console.log(request);
 });
 
