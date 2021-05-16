@@ -3,7 +3,7 @@ var exphbs = require("express-handlebars");
 var mysql      = require('mysql');
 
 var connection = mysql.createConnection({
-  host     : 'ik1eybdutgxsm0lo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	',
+  host     : 'ik1eybdutgxsm0lo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
   port     :  3306 ,
   user     : 'hw0ak1n2u9xbrc4p',
   password : 'f4137a8keknru1hx',
@@ -16,8 +16,14 @@ var connection = mysql.createConnection({
   // database : 'HeroesAndLegends'
 });
  
-connection.connect();
-
+connection.connect(function(err) {
+  if (err) {
+    console.error('error connecting: ' + err.stack);
+    return;
+  }
+ 
+  console.log('connected as id ' + connection.threadId);
+});
 
 var app = express();
 var PORT = process.env.PORT || 3000
