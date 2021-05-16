@@ -37,6 +37,12 @@ app.set("view engine", "handlebars");
 
 require("./routes/htmlRoutes.js")(app);
 
+// Access the parse results as request.body
+app.post('/details', function(request, response){
+    console.log(request);
+});
+
+
 app.listen(PORT, function(){
     console.log("listening on: " + PORT)
 })
