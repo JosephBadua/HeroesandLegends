@@ -32,5 +32,9 @@ module.exports = function(app) {
     res.render("prizes_and_honorees");
   });
 
+  app.get("/photos_videos", function(req, res) {
+    res.render("photos_videos");
+  });
+
 
 };
