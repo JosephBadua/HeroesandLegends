@@ -28,5 +28,9 @@ module.exports = function(app) {
     res.render("nomination");
   });
 
+  app.get("/prizes", function(req, res) {
+    res.render("prizes_and_honorees");
+  });
+
 
 };
