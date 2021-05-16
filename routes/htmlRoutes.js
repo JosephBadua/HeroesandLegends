@@ -24,5 +24,9 @@ module.exports = function(app) {
     res.render("hwarang_foundation");
   });
 
+  app.get("/nomination", function(req, res) {
+    res.render("nomination");
+  });
+
 
 };
