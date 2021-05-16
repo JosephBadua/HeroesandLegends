@@ -10,12 +10,6 @@
         <div class="carousel-item active">
           <img class="d-block w-100 center-fit" src="images/zero-take-2E64559GMJo-unsplash.jpg" alt="First slide">
         </div>
-        <div class="carousel-item">
-          <img class="d-block w-100 center-fit" src="images/grayscale.png" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100 center-fit" src="images/zero-take-2E64559GMJo-unsplash.jpg" alt="Third slide">
-        </div>
       </div>
     </div>
 
@@ -82,11 +76,26 @@
                 <span class="sr-only"></span>
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Science, Technology, Engineering, and Mathematics (STEM)</a>
-                <a class="dropdown-item" href="#">Medicine</a>
-                <a class="dropdown-item" href="#">Enviornmental Service</a>
-                <a class="dropdown-item" href="#">Huminatarian Servie &amp; Education</a>
-                <a class="dropdown-item" href="#">International Relation</a>
+                <form id="1" method="POST" action="nomination_category">
+                  <input type="hidden" name="category" value="1">
+                  <input type="submit" name="submit" value="Science, Technology, Engineering, and Mathematics (STEM)">
+                </form>
+                <form id="2" method="POST" action="nomination_category">
+                  <input type="hidden" name="category" value="2">
+                  <a class="dropdown-item" href="javasacript: nomination_category(2)">Medicine</a>
+                </form>
+                <form id="3" method="POST" action="nomination_category">
+                  <input type="hidden" name="category" value="3">
+                  <a class="dropdown-item" href="javasacript: nomination_category(3)">Enviornmental Service</a>
+                </form>
+                <form id="4" method="POST" action="nomination_category">
+                  <input type="hidden" name="category" value="4">
+                  <a class="dropdown-item" href="javasacript: nomination_category(4)">Education</a>
+                </form>
+                <form id="5" method="POST" action="nomination_category">
+                  <input type="hidden" name="category" value="5">
+                  <a class="dropdown-item" href="javasacript: nomination_category(5)">International Relation</a>
+                </form>
               </div>
             </div>
         </li>
@@ -146,3 +155,4 @@
 
 <p style="font-family: giveny;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tenetur doloremque quod dicta velit odio inventore sapiente, eligendi alias libero veniam ipsam dolores voluptates voluptatem dolor, exercitationem, culpa eveniet molestiae rem. Maiores eaque voluptatem voluptatibus temporibus magni est iure esse deserunt vel numquam ipsum accusantium, nostrum itaque, doloremque dolor. Ullam.</p>
 <p style="font-family: audrey;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero vero fugit commodi! Aliquid, excepturi voluptatem sapiente voluptate fuga qui autem? Aliquid obcaecati, ducimus eligendi atque laudantium, harum molestiae similique distinctio temporibus optio amet libero, itaque modi. Eum odit vel asperiores officiis enim dolores repudiandae illum? Error aliquid asperiores eligendi sunt?</p>
+
