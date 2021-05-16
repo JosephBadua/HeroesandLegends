@@ -3,11 +3,17 @@ var exphbs = require("express-handlebars");
 var mysql      = require('mysql');
 
 var connection = mysql.createConnection({
-  host     : 'localhost',
+  host     : 'ik1eybdutgxsm0lo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	',
   port     :  3306 ,
-  user     : 'root',
-  password : 'Nightlyassassinx123!@#',
-  database : 'HeroesAndLegends'
+  user     : 'hw0ak1n2u9xbrc4p',
+  password : 'f4137a8keknru1hx',
+  database : 'i09t3zxby93cxf81'
+
+  // host     : 'localhost',
+  // port     :  3306 ,
+  // user     : 'root',
+  // password : 'Nightlyassassinx123!@#',
+  // database : 'HeroesAndLegends'
 });
  
 connection.connect();
