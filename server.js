@@ -32,14 +32,20 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.static("public"));
 
+
 app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
 require("./routes/htmlRoutes.js")(app);
 
 // Access the parse results as request.body
-app.post('/nomination_category', function(request, response){
-    console.log(request);
+app.post("/", function(req, res) {
+  var num1 = req.body.category;
+  var num2 = req.body.submit;
+   
+  var result = num1 + num2 ;
+   
+  console.log(result);
 });
 
 
