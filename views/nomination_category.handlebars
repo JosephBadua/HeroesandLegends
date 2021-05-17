@@ -1,21 +1,118 @@
-{{> header}}
-
-  <div class="row" id="books">
+<div class="container-fluid" style="padding: 0px !important;">
+  <div class="row">
+    <div class="col-md-12">
+      <br/>
+       <a href="#"><img id="title-logo-second" class="center" src="images/hwarang_background.png" alt="Logo"></a>
+      <br/>
+    </div>
   </div>
 
-  <script type="text/javascript">
+  <hr class="center" style="width: 90%;">
   
- const loadBooks = () => {
-      const xhttp = new XMLHttpRequest();
+  <div class="row">
+    <div class="col-md-7">
+      <ul class="nav justify-content-center">
+        <li>
+          <div class="btn-group">
+            <a href="/" class="btn" type="button" aria-haspopup="true" aria-expanded="false">Home</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="btn-group">
+            <a href="announcements" class="btn" type="button" aria-haspopup="true" aria-expanded="false"> Announcements</a>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only"></span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Blogs &amp; Writings</a>
+              <a class="dropdown-item" href="#">Events</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <a class="btn" href="hwarang" >Hwarang Foundation</a>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <div class="btn-group">
+              <a href="prizes" class="btn" type="button" aria-haspopup="true" aria-expanded="false">Prizes and Honorees</a>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only"></span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Science, Technology, Engineering, and Mathematics (STEM)</a>
+                <a class="dropdown-item" href="#">Medicine</a>
+                <a class="dropdown-item" href="#">Enviornmental Service</a>
+                <a class="dropdown-item" href="#">Huminatarian Servie &amp; Education</a>
+                <a class="dropdown-item" href="#">International Relation</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+            <div class="btn-group">
+              <a href="nomination" class="btn" type="button" aria-haspopup="true" aria-expanded="false">Nominations</a>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only"></span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Science, Technology, Engineering, and Mathematics (STEM)</a>
+                <a class="dropdown-item" href="#">Medicine</a>
+                <a class="dropdown-item" href="#">Enviornmental Service</a>
+                <a class="dropdown-item" href="#">Huminatarian Servie &amp; Education</a>
+                <a class="dropdown-item" href="#">International Relation</a>
+              </div>
+            </div>
+        </li>
+        <li class="nav-item">
+          <div class="btn-group">
+            <a href="photos_videos" class="btn" type="button" aria-haspopup="true" aria-expanded="false">Photos &amp; Videos</a>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only"></span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Press &amp; Media</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-3">
+        <ul class="nav justify-content-start">
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Voting</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+             <a class="btn" href="login">Member Login</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <img style="height: 2rem;" src="images/user-profile.png">
+            </div>
+          </li>
+        </ul>
+    </div>
+  </div>
+  <hr class="center" style="width: 90%;">
+  </div>
 
-      xhttp.open("GET", "/nomination_hold", false);
-      xhttp.send().then(
-          const category_name = JSON.parse(xhttp.responseText);
-      console.log(category_name);
-       const x = `
+
            <div class="row">
               <div class="col-md-12">
-                <h1 style="text-align: center;">Nominations for ${category_name}</h1>
+                <h1 style="text-align: center;">Nominations for {{category}} </h1>
               </div>
               <hr class="center" style="width: 90%;">
             </div>
@@ -25,7 +122,7 @@
             <div class="row">
               <div class="col-md-1"></div>
               <div class="col-md-10">
-                <h2>Nomination and Selection of ${category_name} Awardees</h2>
+                <h2>Nomination and Selection of {{category}} Awardees</h2>
               </div>
               <div class="col-md-1"></div>
             </div>
@@ -33,7 +130,7 @@
             <div class="row">
               <div class="col-md-1"></div>
               <div class="col-md-10">
-                <p>Nomination to the Hwarang Heroes and Legends in ${category_name} Award is by invitation only. The names of the nominees and other information about the nominations cannot be revealed until 5 years later.</p>
+                <p>Nomination to the Hwarang Heroes and Legends in {{category}} Award is by invitation only. The names of the nominees and other information about the nominations cannot be revealed until 5 years later.</p>
               </div>
               <div class="col-md-1"></div>
             </div>
@@ -69,7 +166,7 @@
             <div class="row">
               <div class="col-md-1"></div>
               <div class="col-md-10">
-                <p>The Hwarang Heroes and Legends Award Committee is responsible for the selection of the Heroes and Legends in ${category_name}. The Committee screens the nominations and presents a proposal for final candidates. The committee consists nominally of eleven voting members, but since many years, it also includes voting adjunct members. The Committee’s final proposal is discussed in a larger body, the Hwarang Youth Foundation, who has the final voting to nominate the candidate. It is in principle possible to suggest that no Prize be given the current month, but that is a seldom used choice.</p>
+                <p>The Hwarang Heroes and Legends Award Committee is responsible for the selection of the Heroes and Legends in {{category}}. The Committee screens the nominations and presents a proposal for final candidates. The committee consists nominally of eleven voting members, but since many years, it also includes voting adjunct members. The Committee’s final proposal is discussed in a larger body, the Hwarang Youth Foundation, who has the final voting to nominate the candidate. It is in principle possible to suggest that no Prize be given the current month, but that is a seldom used choice.</p>
               </div>
               <div class="col-md-1"></div>
             </div>
@@ -79,7 +176,7 @@
             <div class="row">
               <div class="col-md-1"></div>
               <div class="col-md-10">
-                <h2>Who is eligible for the Hwarang Heroes and Legends Award in ${category_name}?</h2>
+                <h2>Who is eligible for the Hwarang Heroes and Legends Award in {{category}}?</h2>
               </div>
               <div class="col-md-1"></div>
             </div>
@@ -87,7 +184,7 @@
             <div class="row">
               <div class="col-md-1"></div>
               <div class="col-md-10">
-                <p>The candidates eligible for the ${category_name} Award are those nominated by the Committee or qualified persons who have received an invitation from the Hwarang Heroes and Legends Committee to submit names for consideration. No one can nominate himself or herself.</p>
+                <p>The candidates eligible for the {{category}} Award are those nominated by the Committee or qualified persons who have received an invitation from the Hwarang Heroes and Legends Committee to submit names for consideration. No one can nominate himself or herself.</p>
               </div>
               <div class="col-md-1"></div>
             </div>
@@ -137,14 +234,6 @@
             </div>
 
             <hr class="center" style="width: 90%;">
-        `
-
-        document.getElementById('books').innerHTML = document.getElementById('books').innerHTML + x;
-      );
-
-  }
-  
-  loadBooks();
 
 </script>
 

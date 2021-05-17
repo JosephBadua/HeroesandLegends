@@ -1,6 +1,6 @@
 var express = require("express");
 var exphbs = require("express-handlebars");
-var mysql      = require('mysql');
+var mysql  = require('mysql');
 
 var connection = mysql.createConnection({
   host     : 'ik1eybdutgxsm0lo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
@@ -38,29 +38,20 @@ app.set("view engine", "handlebars");
 
 require("./routes/htmlRoutes.js")(app);
 
-let category = [];
-
 app.post('/nomination_hold', function (req, res) {
-  if(category[0] != ''){
-    category.pop();
-  }
 
   const name = req.body.category
   connection.query('SELECT category_name FROM nomination_categories WHERE id = ' + name, function (error, results, fields) {
     if (error) throw error;
-    let category_name = results[0].category_name;
-    // console.log(category_name);
-    category.push(category_name);
-    console.log(category);
+    let category_name = results[0].category_name;  
+    console.log(category_name);
+    res.render("nomination_category", {
+      category: category_name
+    });
   });
-  
 
-  res.render("nomination_category");
 });
 
-app.get('/nomination_hold', (req, res) => {
-  res.json(category);
-});
 
 app.listen(PORT, function(){
     console.log("listening on: " + PORT)
