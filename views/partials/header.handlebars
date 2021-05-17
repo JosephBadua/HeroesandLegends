@@ -24,14 +24,16 @@
               <span class="sr-only"></span>
             </button>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Blogs &amp; Writings</a>
+              <form id="11" method="POST" action="blogs_hold">
+                  <input class="dropdown-item" type="submit" name="submit" value="Blogs and Writings">
+                </form>
               <a class="dropdown-item" href="#">Events</a>
             </div>
           </div>
         </li>
         <li class="nav-item">
           <div class="dropdown">
-            <a class="btn" href="hwarang" >Hwarang Foundation</a>
+            <a class="btn" href="hwarang">Hwarang Foundation</a>
           </div>
         </li>
         <li>
@@ -42,11 +44,26 @@
                 <span class="sr-only"></span>
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Science, Technology, Engineering, and Mathematics (STEM)</a>
-                <a class="dropdown-item" href="#">Medicine</a>
-                <a class="dropdown-item" href="#">Enviornmental Service</a>
-                <a class="dropdown-item" href="#">Huminatarian Servie &amp; Education</a>
-                <a class="dropdown-item" href="#">International Relation</a>
+                <form id="6" method="POST" action="prizes_hold">
+                  <input type="hidden" name="category" value="1">
+                  <input class="dropdown-item" type="submit" name="submit" value="Science, Technology, Engineering, and Mathematics (STEM)">
+                </form>
+                <form id="7" method="POST" action="prizes_hold">
+                  <input type="hidden" name="category" value="2">
+                  <input class="dropdown-item" type="submit" name="submit" value="Medicine">
+                </form>
+                <form id="8" method="POST" action="prizes_hold">
+                  <input type="hidden" name="category" value="3">
+                  <input class="dropdown-item" type="submit" name="submit" value="Enviornmental Service">
+                </form>
+                <form id="9" method="POST" action="prizes_hold">
+                  <input type="hidden" name="category" value="4">
+                  <input class="dropdown-item" type="submit" name="submit" value="Education">
+                </form>
+                <form id="10" method="POST" action="prizes_hold">
+                  <input type="hidden" name="category" value="5">
+                  <input class="dropdown-item" type="submit" name="submit" value="International Relation">
+                </form>
               </div>
             </div>
           </div>

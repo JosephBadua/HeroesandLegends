@@ -32,6 +32,10 @@ module.exports = function(app) {
     res.render("nomination_category");
   });
 
+  app.get("/blogs_writings", function(req, res) {
+    res.render("blogs_writings");
+  });
+
   app.get("/prizes", function(req, res) {
     res.render("prizes_and_honorees");
   });

@@ -1,2 +1,32 @@
 {{> header}}
 
+<div class="row">
+    <div class="col-md-12">
+       <h1 style="text-align: center;">Blogs and Writings</h1>
+         <hr class="center" style="width: 90%;">
+    </div>
+</div>
+
+
+  {{#each all_results}}
+    <br/>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+       <img style="max-width:100%; max-height:100%;" src="{{this.article_image_link}}">
+    </div>
+      <div class="col-md-5">
+        <h1 style="text-align: center;">{{this.article_name}}</h1>
+          <br/>
+        <p>By {{this.article_author_first_name}} {{this.article_author_last_name}}</p>
+        <p>Uploaded: {{this.article_date_created}}</p>
+        <p style="font-size: 20px;">{{this.article_description}}</p>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <br/>
+    <hr class="center-fit" style="width: 85%;"> 
+  {{/each}}
+
+
+{{all_results.[0].id}}
