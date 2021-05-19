@@ -1,10 +1,100 @@
 {{> header}}
 
-  <div class="row">
-    <div class="col-md-12">
-      <h1 style="text-align: center;">Nominations</h1>
-    </div>
-    <hr class="center" style="width: 90%;">
+<div class="row">
+  <div class="col-md-12">
+    <h1 style="text-align: center;">Nominations</h1>
   </div>
+  <hr class="center" style="width: 90%;">
+</div>
 
+<div class="row">
+  <div class="col-md-12 cover-nominations">
+  </div>
+</div>
+
+<br/>
+<br/>
+
+
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <h2>Nomination and selection of Hwarang Heroes and Legends</h2>
+    <br />
+    <p>The Hwarang Heroes and Legends Award Committee is responsible for the selection of the Heroes and Legends. The
+      Committee screens the nominations and presents a proposal for final candidates. The committee consists nominally
+      of eleven voting members, but since many years, it also includes voting adjunct members. The committee then
+      evaluates the candidates’ merits, based on their positive impact on societal, academic, and/or cultural
+      development. The Committee’s final proposal is discussed in a larger body, the Hwarang Youth Foundation, who has
+      the final voting to nominate the candidate. It is in principle possible to suggest that no Prize be given the
+      current month, but that is a seldom used choice.</p>
+  </div>
+  <div class="col-md-2"></div>
+</div>
+
+
+<br/>
+<br/>
+<div class="container-fluid background-grey">
   <br/>
+  <br/>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Read More About the Nomination Process: </h3>
+        </div>
+      </div>
+      <br/>
+      <br/>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+                  <form id="1" method="POST" action="nomination_hold">
+                    <input type="hidden" name="category" value="1">
+                    <input class="dropdown-item" type="submit" name="submit" value="Science, Technology, Engineering, and Mathematics (STEM)">
+                  </form>
+            </div>
+            <div class="col-md-12">
+                  <form id="3" method="POST" action="nomination_hold">
+                    <input type="hidden" name="category" value="3">
+                    <input class="dropdown-item" type="submit" name="submit" value="Enviornmental Service">
+                  </form>
+            </div>
+            <div class="col-md-12">
+              <form id="5" method="POST" action="nomination_hold">
+                    <input type="hidden" name="category" value="5">
+                    <input class="dropdown-item" type="submit" name="submit" value="International Relation">
+                  </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="col-md-12">
+                <form id="2" method="POST" action="nomination_hold">
+                    <input type="hidden" name="category" value="2">
+                    <input class="dropdown-item" type="submit" name="submit" value="Medicine">
+                  </form>
+          </div>
+          <div class="col-md-12">
+            <form id="4" method="POST" action="nomination_hold">
+                    <input type="hidden" name="category" value="4">
+                    <input class="dropdown-item" type="submit" name="submit" value="Education">
+                  </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <br/>
+  <br/>
+
+</div>
+
+
+
+{{> footer}}

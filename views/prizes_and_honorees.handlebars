@@ -2,30 +2,42 @@
 
 <div class="row">
   <div class="col-md-12">
+    {{#if category}}
     <h1 style="text-align: center;">Prizes and Honorees - {{category}} </h1>
+    {{else}}
+    <h1 style="text-align: center;">Prizes and Honorees</h1>
+    {{/if}}
   </div>
   <hr class="center" style="width: 90%;">
 </div>
 
+<div class="row">
+  <div class="col-md-12 cover-prizes">
+  </div>
+</div>
+
 <br />
+<br/>
 
 <div class="row">
-  <div class="col-md-1"></div>
-  <div class="col-md-10">
-    <h3>Featured Honoree for {{category}}</h3>
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <h3>Featured Honorees of Hwarang Heroes and Legends Awards</h3>
     <hr>
   </div>
-  <div class="col-md-1"></div>
+  <div class="col-md-2"></div>
 </div>
 
 <div class="row">
-  <div class="col-md-1"></div>
-  <div class="col-md-5">
+  <div class="col-md-2"></div>
+  <div class="col-md-4">
     <img style="max-width:100%; max-height:100%;"
       src="https://www.anchormortgagellc.com/wp-content/uploads/2015/09/placeholder.png">
   </div>
-  <div class="col-md-5">
+  <div class="col-md-4">
     <h4>{{category}}</h4>
+    <br />
+    <h4>(YEAR) Hero or Legend </h4>
     <br />
     <h5 style="font-size: 20px;">First Name, Last Name</h5>
     <br />
@@ -37,35 +49,43 @@
       quaerat cum debitis sint quam maiores impedit numquam temporibus illum, delectus sequi accusantium quo. At, beatae
       saepe quisquam hic, assumenda quibusdam porro incidunt id omnis nesciunt minus, dolor quae.</p>
     <br/>
-    <a href="#">Learn More</a>
+    <a href="#">Read More</a>
   </div>
-  <div class="col-md-1"></div>
+  <div class="col-md-2"></div>
 </div>
  <br/>
 
  <div class="row">
-  <div class="col-md-1"></div>
-  <div class="col-md-10">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
     <hr>
-    <h3>Previous Honorees for {{category}}</h3>
+    {{#if category}}
+    <h3>Previous Honorees for  - {{category}} </h3>
+    {{else}}
+    <h3>(YEAR) Hero or Legend </h3>
+    {{/if}}
     <hr>
   </div>
-  <div class="col-md-1"></div>
+  <div class="col-md-2"></div>
 </div>
 
+
  <div class="row">
-   <div class="col-md-1"></div>
-   <div class="col-md-10">
+   <div class="col-md-2"></div>
+   <div class="col-md-8">
      <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card h-100">
           <img src="https://www.anchormortgagellc.com/wp-content/uploads/2015/09/placeholder.png" class="card-img-top" alt="...">
           <div class="card-body">
+             <h4>{{category}}</h4>
+             <br />
+             <h4>(YEAR) Hero or Legend </h4>
+             <br />
             <h5 class="card-title">First Name, Last Name</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro nam deleniti corporis mollitia quo aliquam rerum beatae numquam nobis ab! Illo deleniti a sunt nulla repudiandae unde ab aperiam at sint molestiae tempora, excepturi illum commodi fugit accusamus nemo consectetur esse! Id molestias sit neque necessitatibus, ab nobis omnis natus!</p>
           </div>
           <div class="card-footer">
-            <small class="text-muted"><a href="#">Learn More</a></small>
+            <small class="text-muted"><a href="#">Read More</a></small>
           </div>
         </div>
       </div>
@@ -73,11 +93,14 @@
         <div class="card h-100">
           <img src="https://www.anchormortgagellc.com/wp-content/uploads/2015/09/placeholder.png" class="card-img-top" alt="...">
           <div class="card-body">
+             <h4>{{category}}</h4>
+             <br />
+             <h4>(YEAR) Hero or Legend </h4>
+             <br />
             <h5 class="card-title">First Name, Last Name</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro nam deleniti corporis mollitia quo aliquam rerum beatae numquam nobis ab! Illo deleniti a sunt nulla repudiandae unde ab aperiam at sint molestiae tempora, excepturi illum commodi fugit accusamus nemo consectetur esse! Id molestias sit neque necessitatibus, ab nobis omnis natus!</p>
           </div>
           <div class="card-footer">
-            <small class="text-muted"><a href="#">Learn More</a></small>
+            <small class="text-muted"><a href="#">Read More</a></small>
           </div>
         </div>
       </div>
@@ -85,20 +108,25 @@
         <div class="card h-100">
           <img src="https://www.anchormortgagellc.com/wp-content/uploads/2015/09/placeholder.png" class="card-img-top" alt="...">
           <div class="card-body">
+             <h4>{{category}}</h4>
+             <br />
+             <h4>(YEAR) Hero or Legend </h4>
+             <br />
             <h5 class="card-title">First Name, Last Name</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro nam deleniti corporis mollitia quo aliquam rerum beatae numquam nobis ab! Illo deleniti a sunt nulla repudiandae unde ab aperiam at sint molestiae tempora, excepturi illum commodi fugit accusamus nemo consectetur esse! Id molestias sit neque necessitatibus, ab nobis omnis natus!</p>
           </div>
           <div class="card-footer">
-            <small class="text-muted"><a href="#">Learn More</a></small>
+            <small class="text-muted"><a href="#">Read More</a></small>
           </div>
         </div>
       </div>
     </div>
    </div>
-   <div class="col-md-1"></div>
+   <div class="col-md-2"></div>
  </div>
 
 <br/>
+
+{{> footer}}
 
 
 

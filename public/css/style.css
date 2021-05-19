@@ -148,8 +148,50 @@ div.dropdown:hover {
     height: 400px;
 }
 
+/* cover prizzes */
 
-/* cover foundation */
+.cover-prizes {
+    border: 2px solid black;
+    background: url('../../images/ngan-lee-oBvkcyalZKY-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 400px;
+}
+
+/* cover nominations */
+
+.cover-nominations {
+    border: 2px solid black;
+    background: url('../../images/zero-take-2E64559GMJo-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 400px;
+}
+
+
+/* cover nominations-category */
+
+.cover-nomination-category {
+    border: 2px solid black;
+    background: url('../../images/zero-take-13edOTia3a4-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 400px;
+}
+
+/* cover photos */
+
+.cover-photos {
+    border: 2px solid black;
+    background: url('../../images/zero-take-UMnldnoegiA-unsplash\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 400px;
+}
 
 .top-announcement {
     border: 2px solid black;
@@ -636,7 +678,7 @@ header p {
 }
 .timeline::before {
     content: '';
-    background: #c5cae9;
+    background: red;
     width: 5px;
     height: 95%;
     position: absolute;
