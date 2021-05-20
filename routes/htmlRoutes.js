@@ -44,5 +44,8 @@ module.exports = function(app) {
     res.render("photos_videos");
   });
 
+  app.get("/contact", function(req, res) {
+    res.render("contact_form");
+  });
 
 };
