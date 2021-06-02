@@ -27,30 +27,37 @@
              <h5><strong>Submit Contact Form</strong></h5>
             </div>
             <br/>
-            
+
             <div class="form-group col-md-12">
               <label for="contact_name">Name<span style="color: red;">*</span></label>
-              <input type="email" class="form-control" id="contact-name-input" name="contact_name" placeholder="Name">
+
+              {{#if (isdefined data.name)}}
+                
+              {{else}}
+                  <p>Please Enter your name</p>
+              {{/if}}
+
+              <input type="text" class="form-control" id="contact-name-input" name="contact_name" placeholder="Name" value="{{data.name}}">
             </div>
           </div>
           <br/>
           <div class="form-row">
             <div class="form-group col-md-12">
               <label for="contact-email">Email<span style="color: red;">*</span></label>
-              <input type="email" class="form-control"  name="contact_email" placeholder="Email">
+              <input type="email" class="form-control"  name="contact_email" placeholder="Email" value="{{data.email_address}}">
             </div>
           </div>
           <br/>
 
           <div class="form-group">
             <label for="inputAddress">Subject<span style="color: red;">*</span></label>
-            <input type="text" class="form-control" name="contact_subject" placeholder="Email Subject">
+            <input type="text" class="form-control" name="contact_subject" placeholder="Email Subject" value="{{data.subject}}">
           </div>
           <br/>
 
           <div class="form-group">
             <label for="inputAddress2">Message<span style="color: red;">*</span></label>
-            <textarea class="form-control" name="contact_message" placeholder="Email Message"></textarea>
+            <textarea class="form-control" name="contact_message" placeholder="Email Message">{{data.message}}</textarea>
           </div>
           <br/>
 

@@ -3,6 +3,40 @@ var exphbs = require("express-handlebars");
 var mysql  = require('mysql');
 const nodemailer = require("nodemailer");
 
+Handlebars.registerHelper('isdefined', function (value) {
+  return value !== undefined;
+});
+
+async function main() {
+  // Generate test SMTP service account from ethereal.email
+
+  // create reusable transporter object using the default SMTP transport
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'thetomatoman99@gmail.com',
+      pass: 'tomatokki1!' // naturally, replace both with your real credentials or an application-specific password
+    }
+  });
+
+  const mailOptions = {
+    from: 'thetomatoman99@gmail.com',
+    to: 'josephbadua1006@gmail.com',
+    subject: 'Invoices due',
+    text: 'Dudes, we really need your money.'
+  };
+  
+  transporter.sendMail(mailOptions, function(error, info){
+    if (error) {
+    console.log(error);
+    } else {
+      console.log('Email sent: ' + info.response);
+    }
+  });
+  
+}
+
+
 var connection = mysql.createConnection({
   host     : 'ik1eybdutgxsm0lo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
   port     :  3306 ,

@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
+        
+          Handlebars.registerHelper('isdefined', function (value) {
+            return value !== undefined;
+          });
 
         $(".animation-button").click(function(){
           console.log('hello');
