@@ -28,15 +28,18 @@
             </div>
             <br/>
 
+            {{#if data.incomplete}}
+            <p style="color: red;">Please fill out all form fields</p>    
+            <br/>
+            {{/if}}
+
+            {{#if data.complete}}
+            <p style="color: green;">Email Successfully Sent</p>    
+            <br/>
+            {{/if}}
+
             <div class="form-group col-md-12">
               <label for="contact_name">Name<span style="color: red;">*</span></label>
-
-              {{#if (isdefined data.name)}}
-                
-              {{else}}
-                  <p>Please Enter your name</p>
-              {{/if}}
-
               <input type="text" class="form-control" id="contact-name-input" name="contact_name" placeholder="Name" value="{{data.name}}">
             </div>
           </div>
