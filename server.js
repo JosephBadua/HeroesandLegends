@@ -105,7 +105,7 @@ app.post('/contact_form', function (req, res) {
     console.log(email_address);
     console.log(subject);
     console.log(message);
-    res.render("contact", { data: { name: name, email_address: email_address, subject: subject, message: message} })
+    res.render("contact_form", { data: { name: name, email_address: email_address, subject: subject, message: message} })
 
   }
   
