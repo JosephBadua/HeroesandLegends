@@ -1,35 +1,70 @@
 
 <div class="limiter">
-  <div class="container-login100" style="background-image: url('images/login_page.png');">
+  <div class="container-login100" style="background-image: url('/images/login.jpg');">
   <div class="blurred">
-    <div class="wrap-login100" style="background: rgb(255 255 255 / 20%); !important">
-      <form class="login100-form validate-form">
-        <span class="login100-form-logo">
-            <i class="zmdi zmdi-landscape"></i>
-          </span>
-          <span class="login100-form-title p-b-34 p-t-27" style="color: rgb(255 255 255 / 100%); !important">
-           Log in
-          </span>
-          <div class="wrap-input100 validate-input" data-validate="Enter username">
-            <input class="input100" type="text" name="username" placeholder="Username">
-            <span class="focus-input100" data-placeholder=""></span>
-          </div>
-          <div class="wrap-input100 validate-input" data-validate="Enter password">
-           <input class="input100" type="password" name="pass" placeholder="Password">
-            <span class="focus-input100" data-placeholder=""></span>
-          </div>
-          <div class="container-login100-form-btn">
-            <button class="login100-form-btn">
-            Login
-            </button>
-          </div>
-          <div class="text-center p-t-90">
-            <br/>
-            <a class="txt1" href="#" style="color: rgb(255 255 255 / 100%) !important">
-             Forgot Password?
-            </a>
-          </div>
-        </form>
+      <div class="wrap-login100" style="background: rgb(255 255 255 / 35%); !important">
+      {{#if data.reset}}
+              <form action="form_login" method="POST" class="login100-form validate-form">
+                {{!-- <span class="login100-form-logo">
+                    <i class="zmdi zmdi-landscape"></i>
+                  </span> --}}
+                  <span class="login100-form-title p-b-34 p-t-27" style="color: rgb(255 255 255 / 100%); !important">
+                  Reset Password
+                  </span>
+                  <div class="wrap-input100 validate-input" data-validate="Enter username">
+                    <input class="input100" type="text" name="email" placeholder="Email">
+                    <span class="focus-input100" data-placeholder=""></span>
+                  </div>
+                  <div class="container-login100-form-btn">
+                    <button class="login100-form-btn">
+                    Login
+                    </button>
+                  </div>
+                  <div class="text-center p-t-90">
+              </form>
+                    <br/>
+                    <a class="login-form-button" href="contact">Cancel</a>
+      {{else}}
+
+        {{#if data.Register}}
+
+        {{else}}
+              <form action="form_login" method="POST" class="login100-form validate-form">
+                {{!-- <span class="login100-form-logo">
+                    <i class="zmdi zmdi-landscape"></i>
+                  </span> --}}
+                  <span class="login100-form-title p-b-34 p-t-27" style="color: rgb(255 255 255 / 100%); !important">
+                  Log in
+                  </span>
+                  <div class="wrap-input100 validate-input" data-validate="Enter username">
+                    <input class="input100" type="text" name="email" placeholder="Email">
+                    <span class="focus-input100" data-placeholder=""></span>
+                  </div>
+                  <div class="wrap-input100 validate-input" data-validate="Enter password">
+                  <input class="input100" type="password" name="pass" placeholder="Password">
+                    <span class="focus-input100" data-placeholder=""></span>
+                  </div>
+                  <div class="container-login100-form-btn">
+                    <button class="login100-form-btn">
+                    Login
+                    </button>
+                  </div>
+                  <div class="text-center p-t-90">
+              </form>
+                    <br/>
+                <form method="POST" name="forgot_password">
+                    <button>
+                    <p class="login-form-button">Forgot Password?</p>
+                    </button>
+                </form>
+                <form method="POST" name="forgot_password">
+                  <button>
+                    <p class="login-form-button">Register</p>
+                    </button>
+                </form>
+        {{/if}}
+      {{/if}}
+        </div>
       </div>
     </div>
   </div>

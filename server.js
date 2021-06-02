@@ -93,6 +93,22 @@ app.post('/prizes_hold', function (req, res) {
 
 });
 
+app.post('/form_login', function (req, res) {
+
+  const name = req.body.category
+  
+  connection.query('SELECT category_name FROM nomination_categories WHERE id = ' + name, function (error, results, fields) {
+    if (error) throw error;
+    let category_name = results[0].category_name;  
+    console.log(category_name);
+    res.render("prizes_and_honorees", {
+      category: category_name
+    });
+  });
+
+});
+
+
 app.post('/contact_form', function (req, res) {
 
   const name = req.body.contact_name
