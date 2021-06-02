@@ -1,6 +1,7 @@
 var express = require("express");
 var exphbs = require("express-handlebars");
 var mysql  = require('mysql');
+const nodemailer = require("nodemailer");
 
 var connection = mysql.createConnection({
   host     : 'ik1eybdutgxsm0lo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
@@ -89,6 +90,26 @@ app.post('/prizes_hold', function (req, res) {
       category: category_name
     });
   });
+
+});
+
+app.post('/contact_form', function (req, res) {
+
+  const name = req.body.contact_name
+  const email_address = req.body.contact_email
+  const subject = req.body.contact_subject
+  const message = req.body.contact_message
+
+  if(name == '' || email_address == '' || subject == '' || message == ''){
+    console.log(name);
+    console.log(email_address);
+    console.log(subject);
+    console.log(message);
+    res.render("contact", { data: { name: name, email_address: email_address, subject: subject, message: message} })
+
+  }
+  
+
 
 });
 
