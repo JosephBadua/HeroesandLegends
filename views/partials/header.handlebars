@@ -6,107 +6,93 @@
       <br/>
     </div>
   </div>
+</div>
 
   <hr class="center" style="width: 90%;">
   
   <div class="row">
     <div class="col-md-7">
       <ul class="nav justify-content-center">
-        <li>
-          <div class="btn-group">
-            <a class="btn" href="/">Home</a>
+        <li class="nav-item">
+          <div class="dropdown">
+            <a href="/" class="dropbtn btn hover-red">Home</a>
           </div>
         </li>
         <li class="nav-item">
-          <div class="btn-group">
-            <a href="announcements" class="btn" type="button" aria-haspopup="true" aria-expanded="false"> Announcements</a>
-            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="sr-only"></span>
-            </button>
-            <div class="dropdown-menu">
+          <div class="dropdown">
+            <a href="announcements" class="dropbtn btn hover-red">Announcements</a>
+            <div class="dropdown-content hover-color">
               <form id="11" method="POST" action="blogs_hold">
                   <input class="dropdown-item" type="submit" name="submit" value="Blogs and Writings">
+                   <a class="dropdown-item hover-color"  href="#">Events</a>
                 </form>
-              <a class="dropdown-item" href="#">Events</a>
             </div>
           </div>
         </li>
         <li class="nav-item">
           <div class="dropdown">
-            <a class="btn" href="hwarang">Hwarang Foundation</a>
+            <a href="hwarang" class="dropbtn btn hover-red">Hwarang Foundation</a>
           </div>
         </li>
         <li>
           <div class="dropdown">
-            <div class="btn-group">
-              <a href="prizes" class="btn" type="button" aria-haspopup="true" aria-expanded="false">Prizes and Honorees</a>
-              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only"></span>
-              </button>
-              <div class="dropdown-menu">
-                <form id="6" method="POST" action="prizes_hold">
-                  <input type="hidden" name="category" value="1">
-                  <input class="dropdown-item" type="submit" name="submit" value="Science, Technology, Engineering, and Mathematics (STEM)">
-                </form>
-                <form id="7" method="POST" action="prizes_hold">
-                  <input type="hidden" name="category" value="2">
-                  <input class="dropdown-item" type="submit" name="submit" value="Medicine">
-                </form>
-                <form id="8" method="POST" action="prizes_hold">
-                  <input type="hidden" name="category" value="3">
-                  <input class="dropdown-item" type="submit" name="submit" value="Enviornmental Service">
-                </form>
-                <form id="9" method="POST" action="prizes_hold">
-                  <input type="hidden" name="category" value="4">
-                  <input class="dropdown-item" type="submit" name="submit" value="Education">
-                </form>
-                <form id="10" method="POST" action="prizes_hold">
-                  <input type="hidden" name="category" value="5">
-                  <input class="dropdown-item" type="submit" name="submit" value="International Relation">
-                </form>
-              </div>
+            <a href="prizes" class="dropbtn btn hover-red">Prizes and Honorees</a>
+            <div class="dropdown-content hover-color">
+              <form id="6" method="POST" action="prizes_hold">
+                <input type="hidden" name="category" value="1">
+                <input class="dropdown-item hover-color" type="submit" name="submit" value="Science, Technology, Engineering, and Mathematics (STEM)">
+              </form>
+              <form id="7" method="POST" action="prizes_hold">
+                <input type="hidden" name="category" value="2">
+                <input class="dropdown-item hover-color"  type="submit" name="submit" value="Medicine">
+              </form>
+              <form id="8" method="POST" action="prizes_hold">
+                <input type="hidden" name="category" value="3">
+                <input class="dropdown-item hover-color"  type="submit" name="submit" value="Enviornmental Service">
+              </form>
+              <form id="9" method="POST" action="prizes_hold">
+               <input type="hidden" name="category" value="4">
+               <input class="dropdown-item hover-color"  type="submit" name="submit" value="Education">
+              </form>
+              <form id="10" method="POST" action="prizes_hold">
+                <input type="hidden" name="category" value="5">
+                <input class="dropdown-item hover-color"  type="submit" name="submit" value="International Relation">
+              </form>
             </div>
           </div>
         </li>
         <li class="nav-item">
-            <div class="btn-group">
-              <a href="nomination" class="btn" type="button" aria-haspopup="true" aria-expanded="false">Nominations</a>
-              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only"></span>
-              </button>
-              <div class="dropdown-menu">
-                <form id="1" method="POST" action="nomination_hold">
+          <div class="dropdown">
+            <a href="nomination" class="dropbtn btn hover-red">Nominations</a>
+            <div class="dropdown-content hover-color">
+              <form id="1" method="POST" action="nomination_hold">
                   <input type="hidden" name="category" value="1">
-                  <input class="dropdown-item" type="submit" name="submit" value="Science, Technology, Engineering, and Mathematics (STEM)">
-                </form>
-                <form id="2" method="POST" action="nomination_hold">
+                  <input class="dropdown-item hover-color"  type="submit" name="submit" value="Science, Technology, Engineering, and Mathematics (STEM)">
+              </form>
+              <form id="2" method="POST" action="nomination_hold">
                   <input type="hidden" name="category" value="2">
-                  <input class="dropdown-item" type="submit" name="submit" value="Medicine">
-                </form>
-                <form id="3" method="POST" action="nomination_hold">
+                  <input class="dropdown-item hover-color"  type="submit" name="submit" value="Medicine">
+              </form>
+              <form id="3" method="POST" action="nomination_hold">
                   <input type="hidden" name="category" value="3">
-                  <input class="dropdown-item" type="submit" name="submit" value="Enviornmental Service">
-                </form>
-                <form id="4" method="POST" action="nomination_hold">
+                  <input class="dropdown-item hover-color"  type="submit" name="submit" value="Enviornmental Service">
+              </form>
+              <form id="4" method="POST" action="nomination_hold">
                   <input type="hidden" name="category" value="4">
-                  <input class="dropdown-item" type="submit" name="submit" value="Education">
-                </form>
-                <form id="5" method="POST" action="nomination_hold">
+                  <input class="dropdown-item hover-color"  type="submit" name="submit" value="Education">
+              </form>
+              <form id="5" method="POST" action="nomination_hold">
                   <input type="hidden" name="category" value="5">
-                  <input class="dropdown-item" type="submit" name="submit" value="International Relation">
-                </form>
-              </div>
+                  <input class="dropdown-item hover-color"  type="submit" name="submit" value="International Relation">
+              </form>
             </div>
+          </div>
         </li>
         <li class="nav-item">
-          <div class="btn-group">
-            <a href="photos_videos" class="btn" type="button" aria-haspopup="true" aria-expanded="false">Photos &amp; Videos</a>
-            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <span class="sr-only"></span>
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Press &amp; Media</a>
+          <div class="dropdown">
+            <a href="photos_videos" class="dropbtn btn hover-red">Photos &amp; Videos</a>
+            <div class="dropdown-content hover-color">
+              <a class="dropdown-item hover-color" href="#">Press &amp; Media</a>
             </div>
           </div>
         </li>
@@ -117,7 +103,7 @@
         <ul class="nav justify-content-start">
           <li class="nav-item">
             <div class="dropdown">
-              <a class="btn" href="contact">Contact Us</a>
+              <a href="contact" class="dropbtn btn hover-color">Contact Us</a>
             </div>
           </li>
           {{!-- <li class="nav-item">
@@ -127,16 +113,11 @@
           </li> --}}
           <li class="nav-item">
             <div class="dropdown">
-             <a class="btn" href="login">Member Login</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <div class="dropdown">
-              <img style="height: 2rem;" src="images/user-profile.png">
+              <a href="login" class="dropbtn btn">Login</a>
             </div>
           </li>
         </ul>
     </div>
   </div>
   <hr class="center" style="width: 90%;">
-  </div>
+

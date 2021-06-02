@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+        $(".animation-button").click(function(){
+          console.log('hello');
+          $("#first-screen").addClass("slide-out-top");
+          $(".animation-section").addClass("slide-in-bottom");
+
+        });
     //   let first = document.getElementById('first-screen');
     //     first.addEventListener('click', function () {
     //         console.log('click');
@@ -55,7 +62,5 @@ document.addEventListener("DOMContentLoaded", function() {
           
           
           });
-
-        
           
 });

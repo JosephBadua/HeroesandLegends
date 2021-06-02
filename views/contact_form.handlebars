@@ -1,20 +1,86 @@
 {{> header}}
 
 
-           <div class="row">
-              <div class="col-md-12">
-                <h1 style="text-align: center;">Nominations for {{category}} </h1>
-              </div>
-              <hr class="center" style="width: 90%;">
+<div class="row">
+  <div class="col-md-12">
+    <h1 style="text-align: center;">Contact Us</h1>
+  </div>
+  <hr class="center" style="width: 90%;">
+</div>
+
+<div class="row">
+  <div class="col-md-12 cover-nomination-category">
+  </div>
+</div>
+
+<br />
+<br />
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-5">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+             <h5><strong>Submit Contact Form</strong></h5>
             </div>
-
-            <div class="row">
-              <div class="col-md-12 cover-nomination-category">
-              </div>
+            <br/>
+            
+            <div class="form-group col-md-12">
+              <label for="contact_name">Name<span style="color: red;">*</span></label>
+              <input type="email" class="form-control" id="contact-name-input" name="contact_name" placeholder="Name">
             </div>
+          </div>
+          <br/>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="contact-email">Email<span style="color: red;">*</span></label>
+              <input type="email" class="form-control"  name="contact_email" placeholder="Email">
+            </div>
+          </div>
+          <br/>
 
-            <br/>
-            <br/>
+          <div class="form-group">
+            <label for="inputAddress">Subject<span style="color: red;">*</span></label>
+            <input type="text" class="form-control" name="contact_subject" placeholder="Email Subject">
+          </div>
+          <br/>
 
-         
+          <div class="form-group">
+            <label for="inputAddress2">Message<span style="color: red;">*</span></label>
+            <textarea class="form-control" name="contact_message" placeholder="Email Message"></textarea>
+          </div>
+          <br/>
+
+
+          <button type="submit" class="btn btn-secondary">Send Email</button>
+        </form>
+
+        <br/>
+        <br/>
+        <br/>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+          <div class="form-row">
+            <h5><strong>Contact the Hwarang Youth Foundation</strong></h5>
+          </div>
+          <div class="form-row">
+            <p>Postal Address: Hwarang Youth Foundation
+              <br/>
+            3700 Wilshire Blvd #130, Los Angeles CA 90010
+              <br/>
+            Tel: +1 (323) 938-0300
+              <br/>
+            E-mail: hwarangyouthfoundation@gmail.com</p>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+
 {{>footer}}

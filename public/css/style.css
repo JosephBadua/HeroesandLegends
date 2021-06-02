@@ -8,48 +8,111 @@
     src: url('fonts/Audrey-Normal.otf');
 }
 
+html, body { 
+    height: 100%; 
+}
+
 * {
     /* overflow: hidden; */
     font-family: giveny;
+    margin:0;
+    padding:0;
+
 }
 
-#carouselExampleFade {
-    position: relative;
-    z-index: -10;
-    pointer-events: none;
+.slide-out-top {
+	        animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation-delay: 0.2s;
 }
+
+.slide-in-bottom {
+            display: block !important;
+	        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: 0.6s;
+}
+
+.text-focus-in {
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.animation-button {
+    position: absolute;
+    width: 100%;
+    top: 70%;
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    
+    cursor: pointer;
+}
+
+
+@keyframes slide-in-bottom {
+    0% {
+              transform: translateY(0);
+    }
+    100% {
+              transform: translateY(-900px);
+    }
+  }
+
+@keyframes slide-out-top {
+  0% {
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes text-focus-in {
+    0% {
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+  
+.animation-section {
+    position: relative; 
+    z-index: 100;
+    display: none;
+}
+
 
 #title-div {
     position: absolute;
     height: 100%;
     text-align: center;
     width: 100%;
-    z-index: 10;
-    pointer-events: none;
+    z-index: 1;
 }
 
 #title-text {
     position: absolute;
     width: 100%;
-    top: 60%;
+    top: 55%;
     color: white;
     font-size: 3rem;
-    pointer-events: none;
 }
 
 #title-logo {
     position: relative;
     height: 5.5rem;
     text-align: center;
-    z-index: 10;
-    top: 40%;
-    pointer-events: none;
+    
+    top: 35%;
 }
 
 #title-logo-second {
     height: 7rem;
     text-align: center;
-    pointer-events: none;
 }
 
 .center-fit {
@@ -58,12 +121,9 @@
     margin: auto;
 }
 
-#first-photo {
-    /* filter: grayscale(100%); */
-}
-
 #first-screen {
     height: 100%;
+    position: relative;
 }
 
 img {
@@ -184,6 +244,18 @@ div.dropdown:hover {
 
 /* cover photos */
 
+.hover-red:hover {
+    color: red !important;
+} 
+
+.hover-color:hover {
+    color: red !important;
+}
+
+.hover-color:hover .hover-red {
+    color: red !important;
+}
+
 .cover-photos {
     border: 2px solid black;
     background: url('../../images/zero-take-UMnldnoegiA-unsplash\ \(1\).jpg');
@@ -212,7 +284,57 @@ div.dropdown:hover {
     background-position: center;
     height: 400px;
 }
+
+#blogs_announcements {
+    background-color: transparent;
+    color: white;
+}
+#blogs_announcements:hover {
+    font-weight: bold !important;
+}
 /* LOGIN PAGE */
+
+
+/* index page dropdown */
+/* Dropdown Button */
+.dropbtn {
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    font-size: 1rem;
+    border-radius: .25rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    margin-left: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+
+
 
 ul,
 li {
