@@ -44,8 +44,11 @@ module.exports = function(app) {
     res.render("photos_videos");
   });
 
-  app.get("/contact", function(req, res) {
-    res.render("contact_form");
+  app.get("/login_register", function(req, res) {
+    res.render("login_register");
   });
 
+  app.get("/login_reset", function(req, res) {
+    res.render("login_reset");
+  });
 };
